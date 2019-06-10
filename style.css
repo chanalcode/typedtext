@@ -1,0 +1,22 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-image: url(background.jpg);
+	background-size: cover;
+	font-family: "Open Sans";
+	overflow: hidden;
+}
+#str {
+	width: 1000px;
+	padding: 50px;
+	height: auto;
+	font-family: "Open Sans";
+	font-size: 40px;
+	margin: 150px auto;
+	color: #2ff5de;
+	font-weight: 700;
+	background: rgba(0, 0, 0, .7);
+}

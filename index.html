@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Анимация текста на чистом CSS</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="str"></div>
+	<script>
+		var string = "Привет! Меня зовут Антон Саяпин. Я автор YouTube-канала «DIV Code». Каждый день я выкладываю по одному видео на темы HTML, CSS, JavaScript, Bootstrap, WordPress и многое другое. Подписывайтесь на канал, ставьте лайки и оставляйте свои комментарии!";
+		var str = string.split("");
+		var el = document.getElementById('str');
+		(function animate() {
+			str.length > 0 ? el.innerHTML += str.shift() : clearTimeout(running);
+			var running = setTimeout(animate, 90);
+		})();
+	</script>
+</body>
+</html>
